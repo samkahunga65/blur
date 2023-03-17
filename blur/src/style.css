@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+#container2 {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  z-index: 2;
+  backdrop-filter: blur(20px);
+}
+
+#blob {
+  z-index: 1;
+  height: 100px;
+  background-color: white;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    aquamarine,
+    mediumpurple
+  );
+  /* animation: rotate 2s infinite; */
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
